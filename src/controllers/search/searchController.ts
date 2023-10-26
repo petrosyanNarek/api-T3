@@ -19,7 +19,7 @@ export const search = async (req: Request, res: Response) => {
                     } else {
                         return res.status(404).json({
                             message: "Not Found"
-                        })
+                        });
                     }
                 }
             });
@@ -28,6 +28,6 @@ export const search = async (req: Request, res: Response) => {
     } catch (error: any) {
         return res.status(500).json({
             message: error.message
-        })
+        });
     }
 }
