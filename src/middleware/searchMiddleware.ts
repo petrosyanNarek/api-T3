@@ -7,6 +7,6 @@ export const searchMiddleware = async (req: Request, res: Response, next: NextFu
     }).catch((error) => {
         return res.status(400).send({
             message: error.message
-        })
+        });
     });
 }
