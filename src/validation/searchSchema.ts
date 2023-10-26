@@ -11,5 +11,5 @@ export default Joi.object({
         "string.empty": "Number can not be Empty",
         "string.pattern.base": "Invalid number format (should be in XX-XX-XX format)"
     }),
-})
+});
 
